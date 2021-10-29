@@ -32,15 +32,21 @@ i {
 }
 .bit-parent {
     display: grid;
-    grid-template-columns: 4% 96%;
+    grid-template-columns: 5% 95%;
 }
 .nav {
     background-color: var(--identity);
-    height: 40vh;
+    height: 35vh;
+    width: 5%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 5px 5px 0;
+    top: 65px;
 }
 .nav-cont {
     height: 20vh;
-    margin-top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -53,11 +59,14 @@ i {
 .nav-cont i:hover {
     padding-left: 10px;
 }
+.content {
+    grid-column: 2;
+}
 .header {
     font-size: .8rem;
     border-bottom: 1px solid #eee;
     padding: 15px 5px 15px 15px;
-    height: 10%;
+    height: 65px;
 }
 .header .cont {
     width: 95%;
@@ -92,13 +101,10 @@ i {
 }
 @media (max-width:510px) {
     .nav {
-        display: none;
-    }
-    .content {
-        grid-column: span 2;
+        font-size: .8rem;
+        width: 5%;
     }
     .cont {
-        width: 100% !important;
         font-size: .6rem;
     }
     .logo p {
@@ -109,6 +115,12 @@ i {
     }
     .ex-change > * {
         margin-left: 10px;
+    }
+    .figures {
+        font-size: .8rem;
+    }
+    .details {
+        padding-left: 0 !important;
     }
 }
 .welcome {
@@ -170,10 +182,14 @@ i {
 .form .form-min form input[type="submit"] {
     background-color: rgb(70, 163, 70);
     color: white;
-    margin: 20px 0 20px;
+    margin: 20px 0 10px;
     text-indent: 0;
     cursor: pointer;
 }
+.form .form-min + p {
+    font-size: .8rem;
+    text-align: center;
+} 
 .form .form-min form label {
     font-size: .8rem;
 }
@@ -239,9 +255,13 @@ i {
         height: 4%;
     }
     .nav {
-        height: 40vh;
+        height: 30vh;
     }
     .pirchase-min .figures > div span {
         width: 50% !important;
+    }
+    .header {
+        height: 4%;
+        padding-left: 0;
     }
 }
