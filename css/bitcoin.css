@@ -197,8 +197,9 @@ i {
     height: 40px;
 }
 .pirchase-min  > p {
-    width: 90%;
+    width: 100%;
     padding: 10px 0;
+    font-size: .8rem;
 }
 .pirchase-min .figures {
     height: 80%;
