@@ -101,8 +101,8 @@ i {
 }
 @media (max-width:510px) {
     .nav {
-        font-size: .8rem;
-        width: 5%;
+        font-size: .6rem;
+        width: 8%;
     }
     .cont {
         font-size: .6rem;
